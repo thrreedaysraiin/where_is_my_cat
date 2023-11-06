@@ -1,5 +1,4 @@
 from cube import CatCube
-
 class CardDeck:
     def __init__(self):
         self.cards = []
@@ -19,3 +18,6 @@ class CardDeck:
             return self.cards.pop()
         else:
             return None
+
+    def __repr__(self):
+        return f"CardDeck(cards={self.cards})"

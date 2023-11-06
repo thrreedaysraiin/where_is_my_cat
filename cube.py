@@ -12,3 +12,6 @@ class CatCube:
         self.cat_color = random.choice(self.cat_colors)
         self.cat_action = random.choice(self.cat_actions)
         self.cat_spot = random.choice(self.cat_spots)
+
+    def __repr__(self):
+        return f"CatCube(cat_color={self.cat_color}, cat_action={self.cat_action}, cat_spot={self.cat_spot})"
